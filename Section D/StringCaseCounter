@@ -1,0 +1,13 @@
+def count_case(s):
+    upper = 0
+    lower = 0
+    for char in s:
+        if char.isupper():
+            upper += 1
+        elif char.islower():
+            lower += 1
+    return upper, lower
+text = input("Enter a string: ")
+u, l = count_case(text)
+print("Uppercase letters:", u)
+print("Lowercase letters:", l)
